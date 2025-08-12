@@ -1,5 +1,26 @@
 const nomeDoHeroi = "Sans";
 let nivel = 1500;
+let dano = 30;
+
+console.log("O Heroi nome de " + nomeDoHeroi + " está no nivel de " + nivel);
+
+let inimigo = "Goblin";
+let vidaDoInimigo = 20;
+let nivelDoInimigo = 1;
+let vidaPerdida = 20;
+
+if (vidaDoInimigo <= vidaPerdida) {
+
+    console.log(`O ${nomeDoHeroi} atacou o ${inimigo}`);
+    console.log(`O inimigo perdeu ${vidaPerdida}`);
+
+}
+
+console.log(`${nomeDoHeroi} venceu do ${inimigo}`);
+
+nivel += 5000;
+console.log(`O ${nomeDoHeroi} ganhou ${nivel} de xp`);
+
 
 if (nivel <= 1000) {
     console.log("Ferro");
@@ -33,4 +54,4 @@ else if (nivel >= 10001) {
     console.log("Radiante");
 }
 
-console.log("O Heroi nome de " + nomeDoHeroi + " está no nivel de " + nivel);
+console.log(`${nomeDoHeroi} chegou ao nivel Ouro`);
